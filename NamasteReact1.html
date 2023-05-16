@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    
+    <div id="root">Not Rendered</div>
+   
+   
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = ("Welcome To Namaste React Course");
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script> -->
+
+    <script 
+       crossorigin 
+       src="https://unpkg.com/react@18/umd/react.development.js">
+    </script>
+    <script 
+        crossorigin 
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    </script>
+    <script>
+        // FOR SINGLE ELEMENT:-
+        // const heading = React.createElement("h1" , {} ,"Namaste Reat From Akshat Saini.");
+        // const root = ReactDOM.createRoot(document.getElementById("root"));
+        // root.render(heading);
+
+
+        
+        // For Multiple Elements:-
+        const heading1 = React.createElement("h1" , {id:"title",} , "Heading 1");
+        const heading2 = React.createElement("h1" , {id:"title",} , "Heading 2");
+        const container = React.createElement("div" , {id:"container",} , [heading1, heading2]);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(container);
+    </script>
+    
+</body>
+
+</html>
+
+<!-- 1. Developer use to write NOt Rendered or anything in the root element so that when reacts run it will override it and react element will be rendered. But if we have some error in our react code "Not Renedered" will be rendered so in this way we can get notified that some error is there. -->
+
+<!-- 2.Also If we continue refreshing our page we will se "Not Rendered " in betwween thee refreshes this is because react takes some miliseconds of time to load. -->
+
+<!-- 3. We can also write the react code in one line as :- ReactDOM.createRoot(document.getElementById("root")).render(React.createElement("h1" , {} , "Namaste Everyone"));  -->
+
+<!-- 4. If there are any other elements in root than What do you think what will be rendered? No it React element will not be rendered after all other HTML elements rather React will override all the other existing elements. -->
+
+<!-- 5 . Writing scripts in order Matters.Loading scripts in other orders out output can vary. -->
