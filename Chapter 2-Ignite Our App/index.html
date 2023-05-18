@@ -7,27 +7,27 @@
     <title>Ignite Our App.</title>
 </head>
 <body>
-    <div id="root"></div>
-    <script 
+    <div id="root">Not Rendered</div>
+    <!-- <script 
        crossorigin 
        src="https://unpkg.com/react@18/umd/react.development.js">
     </script>
     <script 
         crossorigin 
         src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
-    </script>
-    <script>
-        const heading1 = React.createElement("h1" , {id:"title"} , "Heading 1");
-        const heading2 = React.createElement("h1" , {id:"title"} , "Heading 2");
-        const container = React.createElement("div" , {id:"container"} , [heading1 , heading2]);
-
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(container);
-
-
-        
-    </script>
+    </script> -->
+    <script type="module" src="App.js"></script>
     
 </body>
 </html>
 
+
+<!-- 1. Its not recommended to use CDN but its goot for learning knowledge. SO we will install React npm 
+    install React.We are not doing npm install -D React because we want it o production also.We want it in global.As soon it gets installed you will se dependencies also in package.json.Now install react-dom same as raect.
+
+   2.Now with the help of parcel execute command npx parcel entry_point_of_application that is npx parcel index.html. By This , parcel will give us a server. Now we need to import react and Reactdom from nodemodules.Other wise we will get error.
+
+   3. If we run this without type attribute in script tag we will get some error because our js file has some import and Browser does not understand import.It does not acts as a normal javascript file.SO we need to tellbrowser it is not a normal js file rather it is an module to browser. Thats why we use type="module".
+
+   4. 
+-->

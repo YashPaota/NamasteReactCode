@@ -14,7 +14,7 @@ Notes From the Second Class OF Namaste React.
 
 4.Dependencies :- Dependencies is basically the packages on which our project/Application is dependent upon.
 
-5 DevDependencies :- So basically there are some dependencies which are required at the time of development of the 
+5. DevDependencies :- So basically there are some dependencies which are required at the time of development of the 
                      code/Project by the developer only and not when the  project is on production.So such 
                      dependencies which requires at the time of development is called as devDependencies.
 
@@ -40,7 +40,25 @@ Notes From the Second Class OF Namaste React.
                              changing Major and Minor Version. It can go from 1.2.3 to 1.2.9.
 
 
-9. Node Modules :- Node Modules is kind of database for npm.Whenever e install something it gets installed in the 
+9. Node Modules :- Node Modules is kind of database for npm.Whenever we install something it gets installed in the 
                    nodemodules. No need to push node modules folder to git. And we can regenerate the node modules 
                   from the pacakage.lock.json.
+
+10. npx :- npx basically means to execute the npm.like npx parcel index.html it means npx will execute the parcel 
+           with entry point index.html.
+
+11. Hot Module Reloading(HMR) :- Once we install react and react-dom and if we make any changes to it then it automatically
+                                 changes in the output screen.It is done by HMR.Parcel will keep check of all the files.
+
+12. File Watcher Algorithm :- Parcel uses this algotithm to keep check on the files and if anything has been changed in it
+                               it reflects changes with HRM.
+
+13. .Parcel-cache :- It is folder in this it stores the information about the project when build by parcel.
+                     so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch.
+                     It's a key reason why parcel can be so fast in development mode.We should put this folder in our
+                     gitignore.Because anything which we can generate on server we will put it in gitignore.
+
+14. Dist Folder :- Dist is a folder which keeps the files minified for us. When we do npx parcel index.html.It creates
+                   a faster developemnt version of our project and servers to the server.All the production files are 
+                   placed in dist folder.                               
                     
